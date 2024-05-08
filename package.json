@@ -1,0 +1,21 @@
+{
+  "name": "timesheet-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "npx cypress run --browser=chrome --headed --spec cypress/e2e/form_submission.cy.js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.8.1"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.29.0",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
