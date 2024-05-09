@@ -5,9 +5,9 @@ export class GoogleDoc {
     dropdown = '.KKjvXb'
     select_yes = "div[data-value='Yes'][role='option']"
     submit_form = '.lRwqcd > .uArJ5e > .l4V7wb'
-    confirm_msg='.vHW8K'
-    error_msg='.RHiWt'
-    clear_form='.nYdzXd > .uArJ5e > .l4V7wb > .NPEfkd'
+    confirm_msg = '.vHW8K'
+    error_msg = '.RHiWt'
+    clear_form = '.nYdzXd > .uArJ5e > .l4V7wb > .NPEfkd'
 
     enterName(name) {
         cy.get(this.enter_name).type(name)

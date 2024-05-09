@@ -8,6 +8,7 @@ describe('Submit the Google Form', () => {
     })
 
     it('Submit Form', () => {
+        cy.get('.F9yp7e').should('have.text','Health Survey')
         googledoc.enterName(name);
         googledoc.selectAge();
         googledoc.selectExercise();
